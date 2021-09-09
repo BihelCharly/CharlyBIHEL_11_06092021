@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Banner from './components/Banner.jsx';
+import Flag from './components/Flag.jsx';
+import Gallery from './components/Gallery.jsx';
+import Error404 from './components/Error404';
+import Footer from './components/Footer.jsx';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Banner />
+    <Flag />
+    <Gallery />
+    <Error404 />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

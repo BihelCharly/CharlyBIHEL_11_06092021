@@ -1,0 +1,41 @@
+.flag {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px 0;
+    .flag-txt {
+        position: absolute;
+        color: white;
+        font-size: 48px;
+        z-index: 3;
+    }
+    .flag-img {
+        border-radius: 25px;
+        z-index: 1;
+        background-image: url("../assets/flag_img.png");
+    }
+}
+
+@media (max-width: 720px) {
+    .flag {
+        margin: inherit;
+        .flag-txt {
+            font-size: 24px;
+            display: flex;
+            align-items: flex-start;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 100%;
+            width: 50%;
+        }
+        .flag-img {
+            border-radius: 10px;
+            z-index: 1;
+            height: 111px;
+            width: 335px;
+            object-fit: cover;
+        }
+    }
+}
