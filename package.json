@@ -1,6 +1,6 @@
 {
-  "name": "charlybihel_11_06092021",
   "homepage": "https://bihelcharly.github.io/charlybihel_11_06092021/",
+  "name": "charlybihel_11_06092021",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,12 +20,12 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
