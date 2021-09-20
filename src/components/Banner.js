@@ -10,10 +10,10 @@ function Banner() {
 			<img src={logo} className="LogoKasa" alt="Kasa" title="Logo de Kasa" />
 			<nav>
 				<li>
-					<Link to="/">Accueil</Link>
+					<Link to="/charlybihel_11_06092021/">Accueil</Link>
 				</li>
 				<li>
-					<Link to="/Error404">À Propos</Link>
+					<Link to="/charlybihel_11_06092021/">À Propos</Link>
 				</li>
 			</nav>
 		</header>

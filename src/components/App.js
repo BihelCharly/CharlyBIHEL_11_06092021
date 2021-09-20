@@ -13,10 +13,11 @@ function App() {
 			<Router forceRefresh={true}>
 				<Banner />
 				<Switch>
-					<Route path="/" exact component={Gallery} />
-					<Route path="/Dwelling" exact component={Dwelling} />
+					<Route path="/charlybihel_11_06092021/" exact component={Gallery} />
+					<Route path="/charlybihel_11_06092021/Dwelling/" component={Dwelling} />
 					<Route path="/" component={Error404} status={404} />
-					<Route path="*" component={Error404} status={404} />
+					<Route path="/charlybihel_11_06092021/*" component={Error404} status={404} />
+					<Route path="/" component={Error404} status={404} />
 				</Switch>
 				<Footer />
 			</Router>
