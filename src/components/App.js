@@ -1,26 +1,27 @@
 import React from "react";
 //import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import Banner from "./Banner";
 import Gallery from "./Gallery";
 import Dwelling from "./Dwelling";
+import AboutUs from "./AboutUs";
 import Error404 from "./Error404";
 import Footer from "./Footer";
 
 function App() {
 	return (
 		<div className="App">
-			<Router forceRefresh={true}>
+			<HashRouter basename="/">
 				<Banner />
 				<Switch>
-					<Route path="/charlybihel_11_06092021/" exact component={Gallery} />
-					<Route path="/charlybihel_11_06092021/Dwelling/" component={Dwelling} />
-					<Route path="/" component={Error404} status={404} />
-					<Route path="/charlybihel_11_06092021/*" component={Error404} status={404} />
-					<Route path="/" component={Error404} status={404} />
+					<Route exact={true} path="/" component={Gallery} />
+					<Route path="/Dwelling" component={Dwelling} />
+					<Route path="/AboutUs" component={AboutUs} />
+					<Route path="*" component={Error404} />
+					<Route component={Error404} />
 				</Switch>
 				<Footer />
-			</Router>
+			</HashRouter>
 		</div>
 	);
 }

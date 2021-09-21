@@ -1,5 +1,6 @@
 import React from "react";
 //import ReactDOM from 'react-dom'
+import Collapsible from "./Collapsible";
 import Error404 from "./Error404";
 import "../styles/Dwelling.scss";
 import Dwellings from "../data/dwellings.json";
@@ -9,7 +10,6 @@ function Dwelling() {
 	let urlParam = useLocation().search.toString().replace("?", "");
 	let status;
 	let ownerObj = result(Dwellings);
-
 	function result(array) {
 		for (let i = 0; i < array.length; i++) {
 			if (array[i].id === urlParam) {
@@ -44,6 +44,12 @@ function Dwelling() {
 					alt="Locataire"
 					title="Locataire"
 				></img>
+				<div className="collapses-block collapse-dwelling1">
+					<Collapsible open={true} title="Description" content={ownerObj.description} btnColClassName="collapse-title--dwelling" divColClassName="collapse-content--dwelling" />
+				</div>
+				<div className="collapses-block collapse-dwelling2">
+					<Collapsible open={true} title="Équipements" content={ownerObj.equipments} btnColClassName="collapse-title--dwelling" divColClassName="collapse-content--dwelling" />
+				</div>
 			</div>
 		);
 	}

@@ -1,6 +1,7 @@
 import React from "react";
 //import ReactDOM from 'react-dom';
 import "../styles/Banner.scss";
+import AboutUs from "./AboutUs";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
@@ -10,10 +11,10 @@ function Banner() {
 			<img src={logo} className="LogoKasa" alt="Kasa" title="Logo de Kasa" />
 			<nav>
 				<li>
-					<Link to="/charlybihel_11_06092021/">Accueil</Link>
+					<Link to={"/"}>Accueil</Link>
 				</li>
 				<li>
-					<Link to="/charlybihel_11_06092021/">À Propos</Link>
+					<Link to={"/AboutUs"}>À Propos</Link>
 				</li>
 			</nav>
 		</header>

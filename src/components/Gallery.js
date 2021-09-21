@@ -12,7 +12,7 @@ function Gallery() {
 			<div className="grid">
 				{Dwellings.map((element) => (
 					<NavLink
-						to={{ pathname: "/charlybihel_11_06092021/Dwelling/", search: element.id }}
+						to={{ pathname: "/Dwelling/", search: element.id }}
 						key={element.id}
 					>
 						<div className="card">
