@@ -9,10 +9,6 @@ header {
         flex-direction: row;
         justify-content: flex-end;
         list-style: none;
-         :nth-child(1) {
-            margin-right: 55px;
-            text-decoration-line: underline;
-        }
         li {
             color: #FF6060;
             cursor: pointer;
@@ -21,6 +17,10 @@ header {
             font-weight: 500;
             font-size: 24px;
             text-align: right;
+            .home {
+                text-decoration: underline;
+                padding-right: 55px;
+            }
         }
     }
 }

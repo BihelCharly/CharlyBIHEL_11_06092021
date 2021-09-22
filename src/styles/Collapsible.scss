@@ -1,25 +1,14 @@
-.dwelling-block {
-      .collapse-dwelling1 {
-            grid-column: 1/3;
-      }
-      .collapse-dwelling2 {
-            grid-column: 2/3;
-      }
-      .collapses-block {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            grid-row: 5;
-            margin-top: 25px;
-            .collapse-title, .collapse-content {
-                  width: 100%;
-            }
-      }
-}
-
-
-
-.collapse-title--dwelling {
+.collapsibles-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin : 30px 0 30px 0;
+    .collapsible {
+          width: 45%;
+    }
+      .collapse-title--dwelling {
+      width: 100%;
       text-align: left;
       background-color: #FF6060;
       color: white;
@@ -29,9 +18,8 @@
       padding: 15px;
       border: 0;
       z-index: 2;
-}
-      
-.collapse-content--dwelling {
+      }     
+      .collapse-content--dwelling {
       background-color: #F7F7F7;
       color: #FF6060;
       border-radius: 10px;
@@ -40,7 +28,9 @@
       font-size: 18px;
       margin-top: -15px;
       z-index: 1;
+      }
 }
+
 
 .aboutus-block {
       .collapses-block {

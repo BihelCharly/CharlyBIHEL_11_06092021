@@ -7,6 +7,7 @@ import Dwelling from "./Dwelling";
 import AboutUs from "./AboutUs";
 import Error404 from "./Error404";
 import Footer from "./Footer";
+import "../styles/App.scss";
 
 function App() {
 	return (

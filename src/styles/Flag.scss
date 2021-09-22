@@ -13,8 +13,8 @@
     .flag-img {
         width: 100%;
         border-radius: 25px;
-        z-index: 1;
-        background-image: url("../assets/flag_bg.png");
+        z-index: 2;
+        filter: brightness(60%);
     }
 }
 

@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 function Gallery() {
 	return (
 		<div>
-			<Flag />
+			<Flag propsImg="home"/>
 			<div className="grid">
 				{Dwellings.map((element) => (
 					<NavLink

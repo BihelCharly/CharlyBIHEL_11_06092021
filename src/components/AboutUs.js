@@ -7,7 +7,7 @@ import Collapsible from "./Collapsible";
 function AboutUs() {
       return(
             <>
-                  <Flag/>
+                  <Flag propsImg="aboutus"/>
                   <div className="aboutus-block">
                         <div className="collapses-block">
                               <Collapsible open={false} title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." btnColClassName="collapse-title--aboutus" divColClassName="collapse-content--aboutus" />

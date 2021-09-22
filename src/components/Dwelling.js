@@ -24,6 +24,7 @@ function Dwelling() {
 		return <Error404 />;
 	} else {
 		return (
+			<>
 			<div className="dwelling-block">
 				<img
 					src={ownerObj.pictures[0]}
@@ -37,20 +38,25 @@ function Dwelling() {
 					<li>{ownerObj.tags[0]}</li>
 					<li>{ownerObj.tags[1]}</li>
 				</ul>
-				<p className="dwelling-host-name">{ownerObj.host.name}</p>
-				<img
-					src={ownerObj.host.picture}
-					className="dwelling-host-photo"
-					alt="Locataire"
-					title="Locataire"
-				></img>
-				<div className="collapses-block collapse-dwelling1">
-					<Collapsible open={true} title="Description" content={ownerObj.description} btnColClassName="collapse-title--dwelling" divColClassName="collapse-content--dwelling" />
-				</div>
-				<div className="collapses-block collapse-dwelling2">
-					<Collapsible open={true} title="Équipements" content={ownerObj.equipments} btnColClassName="collapse-title--dwelling" divColClassName="collapse-content--dwelling" />
+				<div className="host">
+					<p className="host-name">{ownerObj.host.name}</p>
+					<img
+						src={ownerObj.host.picture}
+						className="host-photo"
+						alt="Locataire"
+						title="Locataire"
+					></img>
 				</div>
 			</div>
+					<div className="collapsibles-block">
+					<div className="collapsible">
+						<Collapsible open={true} title="Description" content={ownerObj.description} btnColClassName="collapse-title--dwelling" divColClassName="collapse-content--dwelling" />
+					</div>
+					<div className="collapsible">
+						<Collapsible open={true} title="Équipements" content={ownerObj.equipments} btnColClassName="collapse-title--dwelling" divColClassName="collapse-content--dwelling" />
+					</div>
+				</div>
+			</>
 		);
 	}
 }

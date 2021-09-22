@@ -53,27 +53,32 @@
     }
 }
 
-.dwelling-host-name {
-    width: 50%;
-    text-align: right;
+.host {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     color: #FF6060;
     font-size: 18px;
-    grid-column: 2/2;
+    grid-column: 2/3;
     grid-row: 2;
+    column-gap: 15px;
 }
 
-.dwelling-host-photo {
-    justify-self: right;
+.host-name {
+    text-align: right;
+    width: 150px;
+}
+
+.host-photo {
     border-radius: 50%;
     object-fit: cover;
     width: 64px;
-    grid-column: 3/3;
-    grid-row: 2;
 }
 
 .dwelling-title,
-.dwelling-host-name,
-.dwelling-host-photo {
+.host-name,
+.host-photo {
     margin: 20px 0 0 0;
-    align-self: center;
 }

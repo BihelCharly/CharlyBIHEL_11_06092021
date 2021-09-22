@@ -11,7 +11,7 @@ function Banner() {
 			<img src={logo} className="LogoKasa" alt="Kasa" title="Logo de Kasa" />
 			<nav>
 				<li>
-					<Link to={"/"}>Accueil</Link>
+					<Link to={"/"} className="home">Accueil</Link>
 				</li>
 				<li>
 					<Link to={"/AboutUs"}>À Propos</Link>
