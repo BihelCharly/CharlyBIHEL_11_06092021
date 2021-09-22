@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/charlybihel_11_06092021/static/css/main.7dd4011b.chunk.css",
-    "main.js": "/charlybihel_11_06092021/static/js/main.e13beab6.chunk.js",
-    "main.js.map": "/charlybihel_11_06092021/static/js/main.e13beab6.chunk.js.map",
-    "runtime-main.js": "/charlybihel_11_06092021/static/js/runtime-main.412169dd.js",
-    "runtime-main.js.map": "/charlybihel_11_06092021/static/js/runtime-main.412169dd.js.map",
-    "static/js/2.e6e805ec.chunk.js": "/charlybihel_11_06092021/static/js/2.e6e805ec.chunk.js",
-    "static/js/2.e6e805ec.chunk.js.map": "/charlybihel_11_06092021/static/js/2.e6e805ec.chunk.js.map",
-    "static/js/3.381864f0.chunk.js": "/charlybihel_11_06092021/static/js/3.381864f0.chunk.js",
-    "static/js/3.381864f0.chunk.js.map": "/charlybihel_11_06092021/static/js/3.381864f0.chunk.js.map",
+    "main.css": "/charlybihel_11_06092021/static/css/main.b9a4c5de.chunk.css",
+    "main.js": "/charlybihel_11_06092021/static/js/main.f4b045ad.chunk.js",
+    "main.js.map": "/charlybihel_11_06092021/static/js/main.f4b045ad.chunk.js.map",
+    "runtime-main.js": "/charlybihel_11_06092021/static/js/runtime-main.00635ebb.js",
+    "runtime-main.js.map": "/charlybihel_11_06092021/static/js/runtime-main.00635ebb.js.map",
+    "static/js/2.4b2017d1.chunk.js": "/charlybihel_11_06092021/static/js/2.4b2017d1.chunk.js",
+    "static/js/2.4b2017d1.chunk.js.map": "/charlybihel_11_06092021/static/js/2.4b2017d1.chunk.js.map",
+    "static/js/3.e12ee4c4.chunk.js": "/charlybihel_11_06092021/static/js/3.e12ee4c4.chunk.js",
+    "static/js/3.e12ee4c4.chunk.js.map": "/charlybihel_11_06092021/static/js/3.e12ee4c4.chunk.js.map",
     "index.html": "/charlybihel_11_06092021/index.html",
-    "static/css/main.7dd4011b.chunk.css.map": "/charlybihel_11_06092021/static/css/main.7dd4011b.chunk.css.map",
-    "static/js/2.e6e805ec.chunk.js.LICENSE.txt": "/charlybihel_11_06092021/static/js/2.e6e805ec.chunk.js.LICENSE.txt",
-    "static/media/flag_img.efc1935e.png": "/charlybihel_11_06092021/static/media/flag_img.efc1935e.png"
+    "static/css/main.b9a4c5de.chunk.css.map": "/charlybihel_11_06092021/static/css/main.b9a4c5de.chunk.css.map",
+    "static/js/2.4b2017d1.chunk.js.LICENSE.txt": "/charlybihel_11_06092021/static/js/2.4b2017d1.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/charlybihel_11_06092021/static/media/Montserrat-Regular.3cd78665.ttf",
+    "static/media/flag_mountain.fce6fc3e.png": "/charlybihel_11_06092021/static/media/flag_mountain.fce6fc3e.png",
+    "static/media/flag_sea.efc1935e.png": "/charlybihel_11_06092021/static/media/flag_sea.efc1935e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.412169dd.js",
-    "static/js/2.e6e805ec.chunk.js",
-    "static/css/main.7dd4011b.chunk.css",
-    "static/js/main.e13beab6.chunk.js"
+    "static/js/runtime-main.00635ebb.js",
+    "static/js/2.4b2017d1.chunk.js",
+    "static/css/main.b9a4c5de.chunk.css",
+    "static/js/main.f4b045ad.chunk.js"
   ]
 }
