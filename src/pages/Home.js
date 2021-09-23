@@ -1,14 +1,14 @@
 import React from "react";
 //import ReactDOM from 'react-dom'
-import "../styles/Gallery.scss";
-import Flag from "./Flag";
+import "../styles/Home.scss";
+import Banner from "../components/Banner";
 import Dwellings from "../data/dwellings.json";
 import { NavLink } from "react-router-dom";
 
-function Gallery() {
+function Home() {
 	return (
-		<div>
-			<Flag propsImg="home"/>
+		<div className="main">
+			<Banner propsImg="home"/>
 			<div className="grid">
 				{Dwellings.map((element) => (
 					<NavLink
@@ -31,4 +31,4 @@ function Gallery() {
 	);
 }
 
-export default Gallery;
+export default Home;

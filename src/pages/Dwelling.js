@@ -1,7 +1,7 @@
 import React from "react";
 //import ReactDOM from 'react-dom'
-import Collapsible from "./Collapsible";
-import Error404 from "./Error404";
+import Collapsible from "../components/Collapsible";
+import Error404 from "../components/Error404";
 import "../styles/Dwelling.scss";
 import Dwellings from "../data/dwellings.json";
 import { useLocation } from "react-router-dom";
@@ -24,7 +24,7 @@ function Dwelling() {
 		return <Error404 />;
 	} else {
 		return (
-			<>
+			<div className="main">
 			<div className="dwelling-block">
 				<img
 					src={ownerObj.pictures[0]}
@@ -50,13 +50,13 @@ function Dwelling() {
 			</div>
 					<div className="collapsibles-block">
 					<div className="collapsible">
-						<Collapsible open={true} title="Description" content={ownerObj.description} btnColClassName="collapse-title--dwelling" divColClassName="collapse-content--dwelling" />
+						<Collapsible open={true} title="Description" contentString={ownerObj.description} btnColClassName="collapse-title--dwelling" divColClassName="collapse-content--dwelling" />
 					</div>
 					<div className="collapsible">
-						<Collapsible open={true} title="Équipements" content={ownerObj.equipments} btnColClassName="collapse-title--dwelling" divColClassName="collapse-content--dwelling" />
+						<Collapsible open={true} title="Équipements" contentArray={ownerObj.equipments} btnColClassName="collapse-title--dwelling" divColClassName="collapse-content--dwelling" />
 					</div>
 				</div>
-			</>
+			</div>
 		);
 	}
 }

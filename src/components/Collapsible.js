@@ -7,11 +7,21 @@ class Collapsible extends React.Component {
 
       constructor(props){
             super(props);
-            this.state = {open: this.props.open} 
+            this.state = {open: this.props.open};
+            this.contentType = this.setContentType(props);
             this.togglePanel = this.togglePanel.bind(this);
+          
       }
       
-      togglePanel(e){
+      setContentType(data){
+            if (data.contentArray) {
+                 return <ul> {data.contentArray.map((element,i) => <li key={i}>{element}</li>)} </ul>
+            } else {
+                  return <p> {data.contentString} </p>;
+            }
+      }
+
+         togglePanel(e){
             this.setState({open: !this.state.open})
       }
       
@@ -24,7 +34,7 @@ class Collapsible extends React.Component {
                         { this.state.open ?
                               (
                                     <div className={this.props.divColClassName}>
-                                          <p>{this.props.content}</p>
+                                          {this.contentType}
                                     </div>
                               ) : null
                         }
@@ -33,11 +43,11 @@ class Collapsible extends React.Component {
       }
 }
 
-
 Collapsible.propTypes = {
       open: PropTypes.bool,
       title: PropTypes.string,
-      content: PropTypes.string,
+      contentString: PropTypes.string,
+      contentArray : PropTypes.array,
       btnColClassName: PropTypes.string,
       divColClassName: PropTypes.string
 

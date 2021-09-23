@@ -16,7 +16,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 100px;
 }
 
 a:link, a:visited {
@@ -24,14 +23,15 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-body>* {
-    box-sizing: border-box;
+*, *:before,
+*:after {
+ box-sizing: border-box;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+ul, ol, menu {
+    padding-inline-start: 0em;
+    list-style: none;
 }
-
 
 @media (max-width: 720px) {
     body {
