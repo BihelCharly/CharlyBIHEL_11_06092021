@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/charlybihel_11_06092021/static/css/main.b896ea8b.chunk.css",
-    "main.js": "/charlybihel_11_06092021/static/js/main.e1c10370.chunk.js",
-    "main.js.map": "/charlybihel_11_06092021/static/js/main.e1c10370.chunk.js.map",
+    "main.css": "/charlybihel_11_06092021/static/css/main.e22ad603.chunk.css",
+    "main.js": "/charlybihel_11_06092021/static/js/main.f999b3d2.chunk.js",
+    "main.js.map": "/charlybihel_11_06092021/static/js/main.f999b3d2.chunk.js.map",
     "runtime-main.js": "/charlybihel_11_06092021/static/js/runtime-main.00635ebb.js",
     "runtime-main.js.map": "/charlybihel_11_06092021/static/js/runtime-main.00635ebb.js.map",
     "static/js/2.4b2017d1.chunk.js": "/charlybihel_11_06092021/static/js/2.4b2017d1.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e12ee4c4.chunk.js": "/charlybihel_11_06092021/static/js/3.e12ee4c4.chunk.js",
     "static/js/3.e12ee4c4.chunk.js.map": "/charlybihel_11_06092021/static/js/3.e12ee4c4.chunk.js.map",
     "index.html": "/charlybihel_11_06092021/index.html",
-    "static/css/main.b896ea8b.chunk.css.map": "/charlybihel_11_06092021/static/css/main.b896ea8b.chunk.css.map",
+    "static/css/main.e22ad603.chunk.css.map": "/charlybihel_11_06092021/static/css/main.e22ad603.chunk.css.map",
     "static/js/2.4b2017d1.chunk.js.LICENSE.txt": "/charlybihel_11_06092021/static/js/2.4b2017d1.chunk.js.LICENSE.txt",
     "static/media/index.css": "/charlybihel_11_06092021/static/media/Montserrat-Regular.3cd78665.ttf",
     "static/media/banner_mountain.fce6fc3e.png": "/charlybihel_11_06092021/static/media/banner_mountain.fce6fc3e.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.00635ebb.js",
     "static/js/2.4b2017d1.chunk.js",
-    "static/css/main.b896ea8b.chunk.css",
-    "static/js/main.e1c10370.chunk.js"
+    "static/css/main.e22ad603.chunk.css",
+    "static/js/main.f999b3d2.chunk.js"
   ]
 }
