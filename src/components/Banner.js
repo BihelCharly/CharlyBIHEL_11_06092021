@@ -14,21 +14,12 @@ class Banner extends React.Component {
       }
 
 	  setImg(data) {
-		  switch (data) {
-			case "home":
-				return bgSea;
-		   	case "aboutus":
-				return bgMountain;
-			default:
-				break;
-		  }
+		return data === "home" ? bgSea : bgMountain ;
 	  }
 
 	  setTxt(data) {
-		  if(data === "home") {
-			  return <h1 className="Banner-txt">Chez vous, partout et ailleurs</h1>;
-		  }
-	  }
+			return data === "home" ? <h1 className="Banner-txt">Chez vous, partout et ailleurs</h1> : null ;
+		}
 
       render() {
             return (

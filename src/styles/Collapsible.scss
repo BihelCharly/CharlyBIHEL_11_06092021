@@ -8,9 +8,6 @@
           width: 45%;
     }
       .collapse-title--dwelling {
-      p, ul {
-            padding: 15px;
-      }
       width: 100%;
       text-align: left;
       background-color: #FF6060;
@@ -19,6 +16,7 @@
       cursor: pointer;
       border-radius: 10px;
       padding: 15px;
+      padding-left: 2rem;
       border: 0;
       z-index: 2;
       }     
@@ -26,8 +24,9 @@
       background-color: #F7F7F7;
       color: #FF6060;
       height: 100%;
+      min-height: 249px;
       border-radius: 10px;
-      padding: 30px 15px 20px 15px;
+      padding: 2rem;
       font-family: verdana;
       font-size: 18px;
       margin-top: -15px;
@@ -50,7 +49,8 @@
       color: white;
       font-size: 24px;
       border-radius: 5px;
-      padding: 10px;
+      padding: 15px;
+      padding-left: 2rem;
       border: 0;
       cursor: pointer;
 } 
@@ -61,6 +61,28 @@
       font-size: 24px;
       border: 5px;
       >p {
-            padding: 20px;
+            padding: 2rem;
       }
+}
+
+@media (max-width: 720px) {
+      .aboutus-block {
+            padding-top: 25px;
+            .collapses-block {
+                  width: 90%;
+                  align-self: center;
+            }
+      }
+
+      .collapse-title--aboutus {
+            font-size: 16px;
+      }
+
+      .collapse-content--aboutus {
+      font-size: 14px;
+
+      >p {
+            padding: 10px;
+      }
+}
 }

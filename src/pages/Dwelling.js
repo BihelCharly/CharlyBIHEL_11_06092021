@@ -1,37 +1,35 @@
 import React from "react";
 //import ReactDOM from 'react-dom'
+import "../styles/Dwelling.scss";
+import Slider from "../components/Slider";
+import Rating from "../components/Rating";
 import Collapsible from "../components/Collapsible";
 import Error404 from "../components/Error404";
-import "../styles/Dwelling.scss";
+
 import Dwellings from "../data/dwellings.json";
 import { useLocation } from "react-router-dom";
 
 function Dwelling() {
-	let urlParam = useLocation().search.toString().replace("?", "");
-	let status;
-	let ownerObj = result(Dwellings);
-	function result(array) {
-		for (let i = 0; i < array.length; i++) {
-			if (array[i].id === urlParam) {
+	
+	let status = false;
+	const url = useLocation().search.toString().replace("?", "");
+
+	const ownerObj = ((array) =>
+		{ for (let i = 0; i < array.length; i++) {
+			if (url === array[i].id) {
 				status = true;
 				return array[i];
-			} else {
-				status = false;
 			}
 		}
-	}
+	})(Dwellings);
+
 	if (!status) {
 		return <Error404 />;
 	} else {
 		return (
 			<div className="main">
 			<div className="dwelling-block">
-				<img
-					src={ownerObj.pictures[0]}
-					className="dwelling-photo"
-					alt=""
-					title=""
-				/>
+				<Slider sliderImg = {ownerObj.pictures} />
 				<h1 className="dwelling-title">{ownerObj.title}</h1>
 				<p className="dwelling-location">{ownerObj.location}</p>
 				<ul className="dwelling-tags">
@@ -47,6 +45,7 @@ function Dwelling() {
 						title="Locataire"
 					></img>
 				</div>
+				<Rating rate={ownerObj.rating} />
 			</div>
 					<div className="collapsibles-block">
 					<div className="collapsible">

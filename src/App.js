@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 import "./App.scss";
 
 function App() {
+
 	return (
 		<div className="App">
 			<HashRouter basename="/">

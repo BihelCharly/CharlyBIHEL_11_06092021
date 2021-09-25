@@ -15,7 +15,7 @@ function Home() {
 						to={{ pathname: "/Dwelling/", search: element.id }}
 						key={element.id}
 					>
-						<div className="card">
+						<article className="card">
 							<p className="card--title">{element.title}</p>
 							<img
 								src={element.pictures[0]}
@@ -23,7 +23,7 @@ function Home() {
 								alt=""
 								title={element.title}
 							/>
-						</div>
+						</article>
 					</NavLink>
 				))}
 			</div>

@@ -10,15 +10,10 @@ class Collapsible extends React.Component {
             this.state = {open: this.props.open};
             this.contentType = this.setContentType(props);
             this.togglePanel = this.togglePanel.bind(this);
-          
       }
       
       setContentType(data){
-            if (data.contentArray) {
-                 return <ul> {data.contentArray.map((element,i) => <li key={i}>{element}</li>)} </ul>
-            } else {
-                  return <p> {data.contentString} </p>;
-            }
+            return data.contentArray ? <ul> {data.contentArray.map((element,i) => <li key={i}>{element}</li>)} </ul> : <p> {data.contentString} </p> ;
       }
 
          togglePanel(e){
@@ -28,7 +23,7 @@ class Collapsible extends React.Component {
       render() {
             return (
                   <>
-                        <button className={this.props.btnColClassName} onClick={(e)=>this.togglePanel(e)} >
+                        <button className={this.props.btnColClassName} onClick={ (e) => this.togglePanel(e) } >
                               {this.props.title}
                         </button>
                         { this.state.open ?
