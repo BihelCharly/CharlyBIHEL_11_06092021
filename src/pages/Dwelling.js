@@ -33,16 +33,17 @@ function Dwelling() {
 				<h1 className="dwelling-title">{ownerObj.title}</h1>
 				<p className="dwelling-location">{ownerObj.location}</p>
 				<ul className="dwelling-tags">
-					<li>{ownerObj.tags[0]}</li>
-					<li>{ownerObj.tags[1]}</li>
+					{ownerObj.tags.map((element, index) => (
+						<li key={index}>{element}</li>
+					))}
 				</ul>
 				<div className="host">
 					<p className="host-name">{ownerObj.host.name}</p>
 					<img
 						src={ownerObj.host.picture}
 						className="host-photo"
-						alt="Locataire"
-						title="Locataire"
+						alt="Photo de l'hôte"
+						title={ownerObj.host.name}
 					></img>
 				</div>
 				<Rating rate={ownerObj.rating} />

@@ -9,7 +9,9 @@
     }
       .collapse-title--dwelling {
       width: 100%;
-      text-align: left;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
       background-color: #FF6060;
       color: white;
       font-size: 18px;
@@ -44,7 +46,10 @@
 }
 
 .collapse-title--aboutus {
-      text-align: left;
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
       background-color: #FF6060;
       color: white;
       font-size: 24px;
@@ -60,12 +65,31 @@
       color: #FF6060;
       font-size: 24px;
       border: 5px;
+      border-radius: 10px;
       >p {
             padding: 2rem;
       }
 }
 
 @media (max-width: 720px) {
+
+      .collapsibles-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 25px;
+            .collapsible {
+                  width: 90%;
+            }
+            .collapse-title--dwelling {
+                  font-size: 16px;
+            }
+            .collapse-content--dwelling {
+                  font-size: 14px;
+                  min-height: 120px;
+            }
+      }
+
       .aboutus-block {
             padding-top: 25px;
             .collapses-block {

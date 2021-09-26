@@ -17,7 +17,7 @@ function Rating(props) {
     }
 
     return (
-        <div className="rating-block">
+        <div className="rating-block" title={"Note de " + rating + "/5"} alt={"Note de " + rating + "/5"}>
             {stars}
         </div>
     );

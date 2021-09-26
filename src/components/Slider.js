@@ -17,7 +17,7 @@ function Slider(props) {
     return (
             <div className="slider-block">
                 {imgArray.map((element, index) => (
-                    <img className="dwelling-photo" key={index} src={element} alt="Location" title="Location" style={{transform: "translateX(-" + slide * 100 + "%)"}}/>
+                    <img className="dwelling-photo" key={index} src={element} alt="Caroussel de photos" title={"Photo "+ index} style={{transform: "translateX(-" + slide * 100 + "%)"}}/>
                 ))}
                 { slides === 1 ? "" :
                     <>

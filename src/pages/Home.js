@@ -10,19 +10,11 @@ function Home() {
 		<div className="main">
 			<Banner propsImg="home"/>
 			<div className="grid">
-				{Dwellings.map((element) => (
-					<NavLink
-						to={{ pathname: "/Dwelling/", search: element.id }}
-						key={element.id}
-					>
+				{Dwellings.map((element, index) => (
+					<NavLink to={{ pathname: "/Dwelling/", search: element.id }} key={index} >
 						<article className="card">
 							<p className="card--title">{element.title}</p>
-							<img
-								src={element.pictures[0]}
-								className="card--photo"
-								alt=""
-								title={element.title}
-							/>
+							<img src={element.pictures[0]} className="card--photo" alt={"Photo "+ element.title} title={element.title} />
 						</article>
 					</NavLink>
 				))}

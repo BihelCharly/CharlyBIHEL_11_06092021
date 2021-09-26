@@ -25,7 +25,7 @@ class Banner extends React.Component {
             return (
                  <div className="Banner">
 					{this.txt}
-					<img src={this.img} className="Banner-img" alt="Couverture" title="Couverture" />		
+					<img src={this.img} className="Banner-img" alt="Photo de couverture" title="Kasa" />		
 				</div>
             );
       }

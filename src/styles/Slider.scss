@@ -43,3 +43,19 @@
         transition-timing-function: ease-in-out;
     }
 }
+
+@media (max-width: 720px) {
+    .slider-block {
+        height: 300px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        .fa-4x {
+            font-size: 2em;
+        }
+    }
+}

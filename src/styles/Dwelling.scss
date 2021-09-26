@@ -76,5 +76,49 @@
 
 
 @media (max-width: 720px) {
+
+    .dwelling-block {
+        grid-template-columns: 50% 50%;
+    }
+
+    .dwelling-title {
+        font-size: 23px;
+        width: 90%;
+        text-align: left;
+        grid-column: 1/3;
+        justify-self: center;
+    }
+
+    .dwelling-title,
+    .host-name,
+    .host-photo {
+        margin: 20px 0 20px 0;
+    }
+
+    .dwelling-location {
+        width: 90%;
+        justify-self: center;
+        grid-column: 1/3;
+    }
     
+    .dwelling-tags {
+        width: 90%;
+        column-gap: 10px;
+        justify-self: center;
+        li {
+            font-size: 12px;
+            padding: 5px 8px 5px 8px;
+        }
+    }
+
+    .host {
+        grid-column: 2;
+        grid-row: 5;
+        margin-right: 10%;
+    }
+
+    .host-name {
+        font-size: 14px;
+    }
+
 }

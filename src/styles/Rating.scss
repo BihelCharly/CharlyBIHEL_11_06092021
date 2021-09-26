@@ -5,5 +5,18 @@
     flex-wrap: nowrap;
     grid-column: 2/3;
     grid-row: 4;
-    font-size: 30px;
+}
+
+@media (max-width: 720px) {
+
+   .rating-block {
+        height: 30%;
+        width: 50%;
+        grid-column: 1/4;
+        grid-row: 5;
+        justify-content: left;
+        align-self: center;
+        margin-left: 5%;
+    }
+
 }
