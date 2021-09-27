@@ -2,7 +2,7 @@ import React from "react";
 //import ReactDOM from 'react-dom';
 import { HashRouter, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Error404 from "./components/Error404";
+import Error404 from "./pages/404";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Dwelling from "./pages/Dwelling";

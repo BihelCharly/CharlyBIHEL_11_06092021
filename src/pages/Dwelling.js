@@ -4,7 +4,7 @@ import "../styles/Dwelling.scss";
 import Slider from "../components/Slider";
 import Rating from "../components/Rating";
 import Collapsible from "../components/Collapsible";
-import Error404 from "../components/Error404";
+import Error404 from "../pages/404";
 
 import Dwellings from "../data/dwellings.json";
 import { useLocation } from "react-router-dom";
