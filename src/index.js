@@ -10,27 +10,23 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./index.scss";
 
-export default function App() {
-  return (
-		<div className="App">
-			<HashRouter basename="/">
-				<Header />
-				<Switch>
-					<Route exact={true} path="/" component={Home} />
-					<Route path="/Dwelling" component={Dwelling} />
-					<Route path="/AboutUs" component={AboutUs} />
-					<Route path="*" component={Error404} />
-					<Route component={Error404} />
-				</Switch>
-				<Footer />
-			</HashRouter>
-		</div>
-	);
-}
+const Root = () =>(
+	<HashRouter basename="/">
+		<Header />
+			<Switch>
+				<Route exact={true} path="/" component={Home} />
+				<Route path="/Dwelling" component={Dwelling} />
+				<Route path="/AboutUs" component={AboutUs} />
+				<Route path="*" component={Error404} />
+				<Route component={Error404} />
+			</Switch>
+		<Footer />
+	</HashRouter>
+);
 
 ReactDOM.render( 
     <React.Fragment >
-    <App />
+    	<Root/>
     </React.Fragment>,
     document.getElementById('root')
 );
