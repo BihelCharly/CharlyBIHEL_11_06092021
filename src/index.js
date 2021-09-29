@@ -1,18 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { HashRouter, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Error404 from "./pages/404";
+import Dwelling from "./pages/Dwelling";
+import AboutUs from "./pages/AboutUs";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./index.scss";
 
+export default function App() {
+  return (
+		<div className="App">
+			<HashRouter basename="/">
+				<Header />
+				<Switch>
+					<Route exact={true} path="/" component={Home} />
+					<Route path="/Dwelling" component={Dwelling} />
+					<Route path="/AboutUs" component={AboutUs} />
+					<Route path="*" component={Error404} />
+					<Route component={Error404} />
+				</Switch>
+				<Footer />
+			</HashRouter>
+		</div>
+	);
+}
 
 ReactDOM.render( 
     <React.Fragment >
-    <App / >
+    <App />
     </React.Fragment>,
     document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

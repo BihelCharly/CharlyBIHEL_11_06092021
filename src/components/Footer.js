@@ -1,7 +1,7 @@
 import React from "react";
 //import ReactDOM from 'react-dom';
-import "../styles/Footer.scss";
 import logo2 from "../assets/logo2.png";
+import "../styles/Footer.scss";
 
 function Footer() {
 	return (

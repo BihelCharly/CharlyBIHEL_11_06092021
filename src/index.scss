@@ -31,6 +31,18 @@ ul, ol, menu {
     list-style: none;
 }
 
+.App {
+    min-height:100vh;
+    .main {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 @media (max-width: 720px) {
     body {
         margin: inherit;

@@ -1,9 +1,9 @@
 import React from "react";
 //import ReactDOM from 'react-dom';
-import "../styles/Rating.scss";
 import starRed from "../assets/star_red.png";
 import starGrey from "../assets/star_grey.png";
 import PropTypes from 'prop-types';
+import "../styles/Rating.scss";
 
 function Rating(props) {
 

@@ -1,9 +1,8 @@
 import React from "react";
 //import ReactDOM from 'react-dom';
-import "../styles/Header.scss";
-import AboutUs from "../pages/AboutUs";
-import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+import "../styles/Header.scss";
 
 function Header() {
 	return (

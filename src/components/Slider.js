@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import "../styles/Slider.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
+import "../styles/Slider.scss";
 
 function Slider(props) {
 

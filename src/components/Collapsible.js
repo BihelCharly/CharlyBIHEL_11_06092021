@@ -21,10 +21,6 @@ class Collapsible extends React.Component {
             return data.contentArray ? <ul> {data.contentArray.map((element,i) => <li key={i}>{element}</li>)} </ul> : <p> {data.contentString} </p> ;
       }
 
-      setArrowDirection(){
-
-      }
-
       togglePanel(e){
             this.setState({ open: !this.state.open })
       }
@@ -41,7 +37,6 @@ class Collapsible extends React.Component {
                                     <div className={this.props.divColClassName}>
                                           {this.contentType}
                                     </div>
-                                    
                               ) : null
                         }
                   </>
